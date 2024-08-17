@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Personalized Learning System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">AI Learning</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/learning-module">Learning Module</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="blog-post">
+                    <h2 class="blog-post-title">The Future of AI in Education</h2>
+                    <p class="blog-post-meta">August 1, 2024 by <a href="#">Admin</a></p>
+                    <p>Artificial intelligence is transforming education by personalizing learning experiences...</p>
+                    <img src="{{ url_for('static', filename='images/ai_education.jpg') }}" class="img-fluid" alt="AI in Education">
+                    <p>With AI, educators can tailor their teaching methods to each student’s individual needs...</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+                <hr>
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Top Trends in EdTech</h2>
+                    <p class="blog-post-meta">July 25, 2024 by <a href="#">Admin</a></p>
+                    <p>EdTech is rapidly evolving with new tools and technologies that are enhancing learning...</p>
+                    <img src="{{ url_for('static', filename='images/edtech_trends.jpg') }}" class="img-fluid" alt="EdTech Trends">
+                    <p>From gamification to virtual reality, these trends are changing the way students learn...</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-4 mb-3 bg-light rounded">
+                    <h4>About</h4>
+                    <p class="mb-0">This AI-Enhanced Personalized Learning System aims to revolutionize education by tailoring the learning experience to each student.</p>
+                </div>
+                <div class="p-4">
+                    <h4>Archives</h4>
+                    <ol class="list-unstyled mb-0">
+                        <li><a href="#">August 2024</a></li>
+                        <li><a href="#">July 2024</a></li>
+                        <li><a href="#">June 2024</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
